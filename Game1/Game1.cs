@@ -11,7 +11,9 @@ namespace Game1
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-
+        public static int ScreenW;
+        public static int ScreenH;
+        public static Random Random; 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -29,6 +31,9 @@ namespace Game1
             // TODO: Add your initialization logic here
 
             base.Initialize();
+            ScreenW = graphics.PreferredBackBufferWidth;
+            ScreenH = graphics.PreferredBackBufferHeight;
+           
         }
 
         /// <summary>
